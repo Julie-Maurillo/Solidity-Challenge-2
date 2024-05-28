@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SimpleContract {
+    uint public etherrr;
+
+    function SetEher(uint _ether) public {
+        etherrr = _ether;
+    }
+    function GetWei () public view returns (uint){
+        return  etherrr * 1 ether;
+    }
+    function GetWeI () public view returns (uint){
+        return  etherrr * 1 gwei;
+    }
+    function GetEtherValue() public  view  returns (uint){
+        return etherrr;
+    }
+}
